@@ -86,16 +86,36 @@ function Dashboard() {
                 <a href="#">Resume</a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/kowshik-t-g-036b852b4" target="_blank" rel="noopener noreferrer">Linkdin</a>
+                <a
+                  href="https://www.linkedin.com/in/kowshik-t-g-036b852b4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkdin
+                </a>
               </li>
               <li>
-                <a href="https://github.com/kowshikramtg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a
+                  href="https://github.com/kowshikramtg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
               </li>
               <li>
-                <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">Email</a>
+                <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">
+                  Email
+                </a>
               </li>
               <li>
-                <a href="https://www.kaggle.com/kowshiktg" target="_blank" rel="noopener noreferrer">Kaggle</a>
+                <a
+                  href="https://www.kaggle.com/kowshiktg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kaggle
+                </a>
               </li>
               <li>
                 <a href="https://medium.com/@kowshiktg3014">Medium</a>
@@ -132,9 +152,9 @@ function Dashboard() {
             backgroundColor: "rgba(155, 154, 154, 1)",
             marginTop: "-5560px",
             marginLeft: "200px",
-            position:"sticky",
-            zIndex:"100",
-            top:"0",
+            position: "sticky",
+            zIndex: "100",
+            top: "0",
           }}
         ></div>
 
@@ -143,11 +163,18 @@ function Dashboard() {
           <div className="perso">
             <div className="persoInfo">
               <h2>Kowshik</h2>
-              <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here%20..." className="email">
+              <a
+                href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here%20..."
+                className="email"
+              >
                 <img src={email} alt="emailLogo" />
                 kowshiktg3014@gmail.com
               </a>
-              <a href="https://www.google.com/maps/place/12.904650707169,77.5064444822303" target="_blank" className="location">
+              <a
+                href="https://www.google.com/maps/place/12.904650707169,77.5064444822303"
+                target="_blank"
+                className="location"
+              >
                 <img src={location} alt="locationLogo" />
                 Bengaluru, India
               </a>
@@ -221,7 +248,7 @@ function Dashboard() {
               marginTop: "20px",
             }}
           ></div>
-          <Occupation/>
+          <Occupation />
           <div
             style={{
               width: "1210px",
@@ -233,7 +260,7 @@ function Dashboard() {
             }}
           ></div>
           {/* horizontal line */}
-          <Certificates/>
+          <Certificates />
           {/* <div className="certificates">
             <h2>Certificates</h2>
             <img src="" alt="all images" />
