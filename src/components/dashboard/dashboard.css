@@ -37,6 +37,7 @@
     top : 18px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position :sticky;
     grid-column : 1 / 2;
     grid-row : 1 / 3;
@@ -53,6 +54,8 @@
     border-radius : 50%;
     margin-bottom : 0.5rem;
 }
+
+/* section styling started  */
 .sections {
     margin: -0.2rem 0;
     padding-top: 0.5rem;
@@ -70,13 +73,15 @@
 .sections ul li {
     margin: 0.6rem 0;
 }
-.sections > ul > li > a{
+.sections > ul > li > .section-link{
     color: rgb(126, 126, 126);
     font-size: 1.1em;
 }
-.sections > ul > li > a:hover{
+.sections > ul > li > .section-link:hover{
     color: rgba(0,0,0,1);
 }
+
+/* implinks styling started  */
 .impLinks {
     margin : 0.5rem 0;
     padding-top : 0.5rem;
@@ -175,12 +180,8 @@
     transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
 }
 .dateAndTime > p:hover{
-    background-color:rgba(121, 90, 142, 0.4);
-    /* color: rgba(0, 0, 0, 0.4); */
     color: rgb(55, 0, 128);
-    /* color: white; */
-    padding: 5px;
-    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Main content starts here  */
@@ -197,7 +198,7 @@
     text-decoration: none;
 }
 .mainContent > .perso > .persoInfo {
-    padding: 1.2rem;
+    padding: 0.1rem;
     display : flex;
     flex-direction : column;
 }

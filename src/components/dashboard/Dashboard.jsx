@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import "./dashboard.css";
 import email from "../../assets/email.png";
 import location from "../../assets/location.png";
@@ -30,12 +31,11 @@ function Dashboard() {
           <div></div>
           <div
             style={{
-              width: "180px",
+              width: "100%",
+              maxWidth: "180px",
               height: "2px",
-              backgroundColor: "rgba(155, 154, 154, 1)",
-              marginBottom: "10px",
-              marginTop: "20px",
-              marginLeft: "-10px",
+              backgroundColor: "rgba(0, 0, 0, 1)",
+              margin: "20px 0 10px 0",
             }}
           ></div>
           {/* horizontal-line  */}
@@ -44,28 +44,84 @@ function Dashboard() {
             <h2>Sections</h2>
             <ul>
               <li>
-                <a href="#">Familier Skills</a>
+                <Link
+                  to="familier_skills"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Familier Skills
+                </Link>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Projects
+                </Link>
               </li>
               <li>
-                <a href="#">Paper</a>
+                <Link
+                  to="paper"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Paper
+                </Link>
               </li>
               <li>
-                <a href="#">Experiences</a>
+                <Link
+                  to="experiences"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Experiences
+                </Link>
               </li>
               <li>
-                <a href="#">Technical skills</a>
+                <Link
+                  to="technical_skills"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Technical skills
+                </Link>
               </li>
               <li>
-                <a href="#">Occupation</a>
+                <Link
+                  to="occupation"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Occupation
+                </Link>
               </li>
               <li>
-                <a href="#">Certificates</a>
+                <Link
+                  to="certificates"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Certificates
+                </Link>
               </li>
               <li>
-                <a href="#">Contact me</a>
+                <Link
+                  to="contact_me"
+                  smooth={true}
+                  duration={500}
+                  className="section-link"
+                >
+                  Contact me
+                </Link>
               </li>
             </ul>
           </div>
@@ -203,7 +259,9 @@ function Dashboard() {
               marginBottom: "20px",
             }}
           ></div>
-          <FamiliarSkills />
+          <div id="familier_skills" name="familier_skills" className="section">
+            <FamiliarSkills />
+          </div>
           {/* horizontal line */}
           <div
             style={{
@@ -215,7 +273,10 @@ function Dashboard() {
             }}
           ></div>
           {/* horizontal line */}
-          <Projects />
+          <div id="projects" name="projects" className="section">
+            {/* <h1>Projects</h1> */}
+            <Projects />
+          </div>
           <div
             style={{
               width: "1210px",
@@ -225,7 +286,10 @@ function Dashboard() {
               marginBottom: "20px",
             }}
           ></div>
-          <Paper />
+          <div id="papers" name="papers" className="section">
+            {/* <h1>papers</h1> */}
+            <Paper />
+          </div>
           {/* horizontal line */}
           <div
             style={{
@@ -236,7 +300,14 @@ function Dashboard() {
               marginBottom: "20px",
             }}
           ></div>
-          <Tech />
+          <div
+            id="technical_skills"
+            name="technical_skills"
+            className="section"
+          >
+            {/* <h1>Technical skills</h1> */}
+            <Tech />
+          </div>
           {/* horiontal line */}
           <div
             style={{
@@ -248,7 +319,10 @@ function Dashboard() {
               marginTop: "20px",
             }}
           ></div>
-          <Occupation />
+          <div id="occupation" name="occupation" className="section">
+            {/* <h1>Occupation</h1> */}
+            <Occupation />
+          </div>
           <div
             style={{
               width: "1210px",
@@ -260,47 +334,63 @@ function Dashboard() {
             }}
           ></div>
           {/* horizontal line */}
-          <Certificates />
-          {/* <div className="certificates">
-            <h2>Certificates</h2>
-            <img src="" alt="all images" />
-            <h3>Certificate-1</h3>
-            <p>
-              a short desc. on certifcate, like, name of the event, why did i
-              got that ?, location, what did i get i return / takeaway
-            </p>
-            <div className="certificateInfo">
-              <div className="certifiedBy">
-                <h4>Certified By</h4>
-                <p>ORG. name</p>
-              </div>
-              <div className="certifiedOn">
-                <h4>Certified on</h4>
-                <p>Month + year</p>
-              </div>
-              <div className="linkedPeople">
-                <h4>Linked People(optional)</h4>
-                <p>name-1</p>
-                <p>name-2</p>
-              </div>
-              <div className="certificateLink">
-                <a href="#">link to</a>
-              </div>
-            </div>
-          </div> */}
-          <div className="connect">
+          <div id="certificates" name="certificates" className="section">
+            {/* <h1>Certificates</h1> */}
+            <Certificates />
+          </div>
+          <div id="contact_me" name="contact_me" className="connect section">
             <h2>Connect with a coffee</h2>
           </div>
           {/* coffee connect */}
           <footer>
             <h2>Contact links</h2>
             <div className="contactlinklist">
-              <img src="" alt="" className="email" />
-              <img src="" alt="" className="linkdin" />
-              <img src="" alt="" className="X" />
-              <img src="" alt="" className="discord" />
-              <img src="" alt="" className="gitHub" />
-              <img src="" alt="" className="medium" />
+              <ul>
+                <li>
+                  <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/kowshik-t-g-036b852b4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Linkdin
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/kowshikram_1405"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    X
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/kowshikramtg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/xKf9rwPW5n"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Discord
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@kowshiktg3014">Medium</a>
+                </li>
+              </ul>
             </div>
           </footer>
         </div>

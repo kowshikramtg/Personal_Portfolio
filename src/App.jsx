@@ -12,10 +12,10 @@ function App() {
     <>
     <div>
       <Dashboard />
-
+      
     </div>
     </>
-  )
+  );
 }
 
 export default App

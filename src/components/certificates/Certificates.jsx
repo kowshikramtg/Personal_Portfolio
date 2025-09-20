@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Certificates.css";
+import bharatiya from "../../assets/certificates_img/bharatiya-A-H.png";
 import cicada from "../../assets/certificates_img/cicada.png";
 import colossus from "../../assets/certificates_img/colossus.jpg";
 import ideaforge from "../../assets/certificates_img/ideaforge.jpg";
@@ -11,35 +12,48 @@ import kaggle from "../../assets/certificates_img/kaggle.png";
 
 function Certificates() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   
   // Sample certificate data
   const certificates = [
     {
       id: 1,
+      title: "Bharatiya Antariksh Hackathon",
+      image: bharatiya,
+      description:
+      "Very proud to be a part of this hackathon, where we worked on a project that can help in space missions. But we couldn't make in any place",
+      certifiedBy: "ISRO + Hack2skill",
+      certifiedOn: "September 2025",
+      linkedPeople: [""],
+      takeaway: "Understood the need of AI in space missions and organizations.",
+      link:"https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
+    },
+    {
+      id: 2,
       title: "Agentic AI day - Google",
       image: agentic,
       description:
       "Understood the need of AI in modern applications, with it's capabilities and limitations",
-      certifiedBy: "Google",
-      certifiedOn: "September 2025",
+      certifiedBy: "Google + Hack2skill",
+      certifiedOn: "August 2025",
       linkedPeople: [""],
       takeaway: "Understood the need of AI in modern applications, with it's capabilities and limitations",
       link:"https://certificate.hack2skill.com/user/aidayideasubmission/2025H2S06AID-I25270",
     },
     {
-      id: 2,
+      id: 3,
       title: "Intro to Machine Learning",
       image: kaggle,
       description:
         "I learnt the basics of machine learning, participated in competation, and finished that project",
       certifiedBy: "Kaggle",
-      certifiedOn: "July, 2025",
+      certifiedOn: "July 2025",
       linkedPeople: [""],
       takeaway: "Learnt how exactly models work with codes and math behind it, also the most important, \"Python\"",
       link:"https://www.kaggle.com/learn/certification/kowshiktg/intro-to-machine-learning",
     },
     {
-      id: 3,
+      id: 4,
       title: "NCAIT '25 - National Conference on Advancement in Information Technology",
       image: ncait,
       description:
@@ -50,7 +64,7 @@ function Certificates() {
       takeaway: "Learnt more about research, how to write a research paper, and also how to present it on the panel",
     },
     {
-      id: 4,
+      id: 5,
       title: "Colossus 2.0",
       image: colossus,
       description:
@@ -62,7 +76,7 @@ function Certificates() {
       
     },
     {
-      id: 5,
+      id: 6,
       title: "Inceptrix",
       image: inceptrix,
       description:
@@ -73,7 +87,7 @@ function Certificates() {
       takeaway: "we (the team) participated among 500+ teams in an AI project competition",
     },
     {
-      id: 6,
+      id: 7,
       title: "Cicada",
       image: cicada,
       description:
@@ -84,7 +98,7 @@ function Certificates() {
       takeaway: "Me with my team, wowrked on \"figma\" which we didn't had any idea, at last, we finished the project proeffiently.",
     },
     {
-      id: 7,
+      id: 8,
       title: "IdeaForge",
       image: ideaforge,
       description:
@@ -96,7 +110,7 @@ function Certificates() {
       "Solid foundation in design principles and user-centered approach",
     },
     {
-      id: 8,
+      id: 9,
       title: "Introduction to Cybersecurity",
       image: infosys,
       description:
@@ -110,6 +124,7 @@ function Certificates() {
 
   // Auto-advance carousel every 4 seconds
   useEffect(() => {
+    if (isPaused) return;
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === certificates.length - 1 ? 0 : prevIndex + 1
@@ -117,7 +132,7 @@ function Certificates() {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [certificates.length]);
+  }, [certificates.length, isPaused]);
 
   const goToPrevious = () => {
     setCurrentIndex(
@@ -150,7 +165,10 @@ function Certificates() {
         </button>
 
         {/* Certificate Display Area */}
-        <div className="certificates-display">
+        <div className="certificates-display" 
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        >
           {certificates.map((cert, index) => {
             const position = index - currentIndex;
             const isCenter = position === 0;

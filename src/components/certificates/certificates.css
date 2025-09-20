@@ -68,6 +68,9 @@
   align-items: center;
   justify-content: center;
 }
+.certificates-display:hover{
+  cursor: pointer;
+}
 
 /* Certificate Cards */
 .certificate-card {
@@ -165,7 +168,7 @@
 .certificate-heading {
   font-size: 2rem;
   font-weight: normal;
-  color: rgb(55, 0, 128);
+  color: rgb(0, 0, 0);
   margin-bottom: 16px;
 }
 
