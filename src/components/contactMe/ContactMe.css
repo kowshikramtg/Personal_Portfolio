@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Heading */
+.title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #4a5568;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+/* Container */
+.contact-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #e8e4ea;
+  border-radius: 20px;
+  color: #222;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    gap: 1rem;
+}
+.form-group.name-email {
+  flex-direction: row;
+    margin: 0 auto 20px auto;
+}
+
+.form-group label {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: -5px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #333;
+}
+.contact-form textarea{
+    min-height: 120px;
+    min-width: 500px;
+    resize: vertical horizontal;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+  transform: translateY(-2px);
+}
+
+/* Inline Date + Time */
+.form-inline {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-inline .form-group {
+  flex: 1;
+}
+
+/* Submit Button */
+.form-actions {
+  text-align: center;
+}
+
+.form-actions input[type="submit"] {
+  background: #cca0e4;
+  color: #410065;
+  font-size: 1.15rem;
+  font-weight: 400;
+  padding: 0.7rem 1.9rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-actions input[type="submit"]:hover {
+  background: #af72d0;
+  font-size:1.2rem;
+  transform: scale(1.05);
+}
+.he{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}

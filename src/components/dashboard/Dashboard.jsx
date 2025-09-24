@@ -12,6 +12,7 @@ import FamiliarSkills from "../../components/familiarSkills/FamiliarSkills.jsx";
 import Projects from "../../components/projects/Projects.jsx";
 import Occupation from "../occupation/Occupation.jsx";
 import Certificates from "../certificates/Certificates.jsx";
+import ContactMe from "../contactMe/ContactMe.jsx";
 // import { List } from "react-scroll";
 
 function Dashboard() {
@@ -204,9 +205,9 @@ function Dashboard() {
         <div
           style={{
             width: "1px",
-            height: "940px",
+            height: "960px",
             backgroundColor: "rgba(155, 154, 154, 1)",
-            marginTop: "-5560px",
+            marginTop: "-5650px",
             marginLeft: "200px",
             position: "sticky",
             zIndex: "100",
@@ -338,8 +339,19 @@ function Dashboard() {
             {/* <h1>Certificates</h1> */}
             <Certificates />
           </div>
+          <div
+            style={{
+              width: "1210px",
+              height: "1px",
+              backgroundColor: "rgba(155, 154, 154, 1)",
+              marginLeft: "-10px",
+              marginBottom: "40px",
+              marginTop: "20px",
+            }}
+          ></div>
           <div id="contact_me" name="contact_me" className="connect section">
-            <h2>Connect with a coffee</h2>
+            {/* <h2>Connect with a coffee</h2> */}
+            <ContactMe/>
           </div>
           {/* coffee connect */}
           <footer>
