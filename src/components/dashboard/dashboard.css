@@ -181,6 +181,7 @@
 }
 .dateAndTime > p:hover{
     color: rgb(55, 0, 128);
+    font-weight: bold;
     cursor: pointer;
 }
 

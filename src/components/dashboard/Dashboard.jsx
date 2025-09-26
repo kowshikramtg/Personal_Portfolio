@@ -5,6 +5,7 @@ import email from "../../assets/email.png";
 import location from "../../assets/location.png";
 import download from "../../assets/download.png";
 import logo from "../../assets/logo.png";
+import ServiceSearch from "./ServiceSearch.jsx";
 import PersoImg from "../images/persoImg.jsx";
 import Paper from "../paper/Paper.jsx";
 import Tech from "../technicalSkills/Tech.jsx";
@@ -184,7 +185,7 @@ function Dashboard() {
 
         {/* upper bar opnes here  */}
         <div className="upNavBar">
-          <div className="searchInput">
+          {/* <div className="searchInput">
             <label htmlFor="searchIn">Services</label>
             <input
               id="searchIn"
@@ -192,7 +193,8 @@ function Dashboard() {
               className="serviceSearch"
               placeholder="ex. Web-Design, Web-Dev..."
             />
-          </div>
+          </div> */}
+          <ServiceSearch/>
           <div className="dateAndTime">
             <p className="day">
               {now.toLocaleDateString(undefined, { weekday: "short" })}
@@ -208,7 +210,7 @@ function Dashboard() {
             width: "1px",
             height: "960px",
             backgroundColor: "rgba(155, 154, 154, 1)",
-            marginTop: "-5650px",
+            marginTop: "-7450px",
             marginLeft: "200px",
             position: "sticky",
             zIndex: "100",
