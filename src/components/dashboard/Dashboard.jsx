@@ -13,6 +13,7 @@ import Projects from "../../components/projects/Projects.jsx";
 import Occupation from "../occupation/Occupation.jsx";
 import Certificates from "../certificates/Certificates.jsx";
 import ContactMe from "../contactMe/ContactMe.jsx";
+import ContactLinks from "../ContactLinks/ContactLinks.jsx";
 // import { List } from "react-scroll";
 
 function Dashboard() {
@@ -221,7 +222,7 @@ function Dashboard() {
             <div className="persoInfo">
               <h2>Kowshik</h2>
               <a
-                href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here%20..."
+                href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,%20place%20your%20desc%20here..."
                 className="email"
               >
                 <img src={email} alt="emailLogo" />
@@ -351,60 +352,10 @@ function Dashboard() {
           ></div>
           <div id="contact_me" name="contact_me" className="connect section">
             {/* <h2>Connect with a coffee</h2> */}
-            <ContactMe/>
+            <ContactMe />
           </div>
           {/* coffee connect */}
-          <footer>
-            <h2>Contact links</h2>
-            <div className="contactlinklist">
-              <ul>
-                <li>
-                  <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">
-                    Email
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/kowshik-t-g-036b852b4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Linkdin
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://x.com/kowshikram_1405"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    X
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/kowshikramtg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/xKf9rwPW5n"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Discord
-                  </a>
-                </li>
-                <li>
-                  <a href="https://medium.com/@kowshiktg3014">Medium</a>
-                </li>
-              </ul>
-            </div>
-          </footer>
+          <ContactLinks />
         </div>
       </div>
     </>
