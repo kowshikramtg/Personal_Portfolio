@@ -4,7 +4,7 @@ function Paper() {
   return (
     <>
       <div className="paper">
-        <h3>Paper</h3>
+        <h3 className="PaperTitle">Paper</h3>
         <img src={paperImg} alt="paper-img" />
         <p>
           I excitingly wrote a Research Paper titled <b>“Applications of Hasse

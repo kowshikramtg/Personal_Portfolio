@@ -10,10 +10,11 @@
     justify-content: center;
     align-items: center;
 }
-.paper > h3{
-    font-size : 40px;
+.paper > .PaperTitle{
+    font-size : 3rem;
     color : rgba(155, 154, 154, 1);
-    margin: 30px;
+    margin: 20px;
+    font-weight: 400;
 }
 .paper > img{
     width: 1000px;

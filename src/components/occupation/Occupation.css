@@ -11,9 +11,10 @@
     align-items: center;
 }
 .Occupation > h3{
-    font-size : 40px;
+    font-size : 3rem;
     color : rgba(155, 154, 154, 1);
     margin: 30px;
+    font-weight: 400;
 }
 .occupationList{
     max-width: 90%;

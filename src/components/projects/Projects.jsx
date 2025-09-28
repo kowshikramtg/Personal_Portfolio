@@ -5,7 +5,7 @@ function Project() {
     return (
         <>
         <div className="projects">
-            <h2>Projects</h2>
+            <h2 className="ProjTitle">Projects</h2>
             <div className="projectsList">
               <div className="projectItem">
                 <h3>Attendance-Bunk Calculator</h3>

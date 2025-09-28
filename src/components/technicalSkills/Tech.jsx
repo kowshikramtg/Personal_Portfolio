@@ -41,6 +41,7 @@ function Tech() {
               backgroundColor: "rgba(155, 154, 154, 1)",
               marginBottom: "15px",
               marginTop:"15px",
+              marginLeft: "15px",
             }}
           ></div>
           <p>

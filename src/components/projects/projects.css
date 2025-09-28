@@ -1,9 +1,9 @@
 *{
     margin: 0;
 }
-.projects > h2{
+.projects > .ProjTitle{
     font-family: "Poppins", "JUST Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size : 2.5rem;
+    font-size : 3rem;
     color : rgba(155, 154, 154, 1);
     font-weight : 400;
     margin : auto 10% auto 40%;
@@ -15,7 +15,7 @@
     gap: 3px;
     /* width: 90vw; */
     max-width: 100%;
-    margin: 140px 0 40px 0;
+    margin: 80px 0 40px 0;
     /* background-color: aliceblue;   */
 }
 .projectItem{

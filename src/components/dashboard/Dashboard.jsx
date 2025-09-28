@@ -357,7 +357,7 @@ function Dashboard() {
             <ContactMe />
           </div>
           {/* coffee connect */}
-          <ContactLinks />
+          {/* <ContactLinks /> */}
         </div>
       </div>
     </>
