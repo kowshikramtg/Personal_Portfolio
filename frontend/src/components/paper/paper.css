@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.paper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paper > .PaperTitle{
+    font-size : 3rem;
+    color : rgba(155, 154, 154, 1);
+    margin: 20px;
+    font-weight: 400;
+}
+.paper > img{
+    width: 1000px;
+    height: 511px;
+    border: 1px solid #000;
+    margin: 25px 0;
+}
+p{
+    margin-top: 30px;
+    font-size: 1.08em;
+    font-family: "Poppins", "JUST Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.paperInfo{
+    margin-top: 40px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 200px);
+}
+h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+.pp{
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+.ppp{
+    margin-bottom: -10px;
+}
+.paperLink > a{
+    font-size: 1.1em;
+    text-decoration: none;
+    width: 300px;
+    padding: 5px 15px;
+    background-color:rgba(121, 90, 142, 0.4);
+    border-radius: 30px;
+}
