@@ -30,7 +30,20 @@
     overflow: hidden;
     cursor: pointer;
 }
+.projectItem > a {
+    text-decoration: none;
+}
+.projectItem > a > h3{
+    color: #000;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Poppins", "JUST Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
 .projectItem::after{
+    pointer-events: none;
     content: "";
     position: absolute;
     top: 0;
@@ -46,12 +59,16 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
+.firstItem{
+    /* margin-top: 20px; */
+}
 .projectsList:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
 }
 .center-big {
     margin-top: -80px;
+    margin-left: 10px;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 }

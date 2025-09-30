@@ -14,7 +14,7 @@
   font-weight: 400;
   color: rgba(155, 154, 154, 1);
   text-align: center;
-  margin: 30px;
+  margin: 0 30px 30px 30px;
 }
 
 /* Carousel Wrapper */
@@ -29,17 +29,12 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 30;
-  background-color: #dfd8ee;
-  color: white;
+  background-color: transparent;
+  color: rgb(164, 164, 164);
   border: none;
   padding: 12px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
   border-radius: 0;
-}
-
-.nav-arrow:hover {
-  background-color: rgb(169, 155, 197);
 }
 
 .nav-arrow-left {
@@ -53,9 +48,14 @@
 }
 
 .arrow-icon {
-  font-size: 24px;
+  font-size: 60px;
   line-height: 1;
   display: block;
+  transition: font-size 0.2s ease-in-out
+}
+.arrow-icon:hover {
+  color: rgb(80, 80, 80);
+  font-size: 80px;
 }
 
 /* Certificate Display Area */
@@ -279,10 +279,6 @@
   
   .nav-arrow {
     padding: 8px;
-  }
-  
-  .arrow-icon {
-    font-size: 20px;
   }
   
   .certificate-heading {

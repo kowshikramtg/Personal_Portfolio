@@ -16,6 +16,7 @@ const SearchHighlight = () => {
 
     if (!searchTerm) return;
 
+    // using regex texhnique, to find the element(searchTerm) typed in input 
     const regex = new RegExp(`(${searchTerm})`, "gi"); // g- global, i- case-Insensetive
     let firstMatch = null;
 

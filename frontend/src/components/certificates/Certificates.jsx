@@ -129,7 +129,7 @@ function Certificates() {
       setCurrentIndex((prevIndex) =>
         prevIndex === certificates.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [certificates.length, isPaused]);
