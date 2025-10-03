@@ -13,11 +13,36 @@ function Project() {
               href="https://attendance-calculator-six.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="imgs"
+              className="project-link"
             >
               <h3>Attendance-Bunk Calculator</h3>
-              <div className="imgs">
-                <img src={project1} alt="website Dashboard" />
+              <div className="project-image-wrapper">
+                <img src={project1} alt="website Dashboard" className="project-img"/>
+                
+                <div className="tech-overlay">
+                  <div className="tech">
+                    <span>JS</span>
+                    <div className="bar">
+                      <div style={{ width: "70%" }}></div>
+                    </div>
+                    <span className="percent">65%</span>
+                  </div>
+                  <div className="tech">
+                    <span>CSS</span>
+                    <div className="bar">
+                      <div style={{ width: "20%" }}></div>
+                    </div>
+                    <span className="percent">28%</span>
+                  </div>
+                  <div className="tech">
+                    <span>HTML</span>
+                    <div className="bar">
+                      <div style={{ width: "10%" }}></div>
+                    </div>
+                    <span className="percent">7%</span>
+                  </div>
+                </div>
+
               </div>
             </a>
           </div>
@@ -34,10 +59,39 @@ function Project() {
               href="https://dad-joke-generate.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="imgs"
+              className="project-link"
             >
-              <h3>Dad joke generate</h3>
-              <img src={project2} alt="Dad joke Generate" />
+              <h3>Dad Joke Generate</h3>
+              <div className="project-image-wrapper">
+                <img
+                  src={project2}
+                  alt="Dad joke Generate"
+                  className="project-img"
+                />
+                <div className="tech-overlay">
+                  <div className="tech">
+                    <span>HTML</span>
+                    <div className="bar">
+                      <div style={{ width: "70%" }}></div>
+                    </div>
+                    <span className="percent">76%</span>
+                  </div>
+                  <div className="tech">
+                    <span>JS</span>
+                    <div className="bar">
+                      <div style={{ width: "20%" }}></div>
+                    </div>
+                    <span className="percent">19%</span>
+                  </div>
+                  <div className="tech">
+                    <span>API</span>
+                    <div className="bar">
+                      <div style={{ width: "10%" }}></div>
+                    </div>
+                    <span className="percent">5%</span>
+                  </div>
+                </div>
+              </div>
             </a>
           </div>
           <div className="projectItem right-bottom">

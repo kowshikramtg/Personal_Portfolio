@@ -228,6 +228,7 @@
     text-decoration: none;
     color: black;
     margin-top : 10px;
+    margin-bottom : 2px;
 }
 .persoInfo > .location > img {
     width : 20px;
@@ -238,6 +239,8 @@
     margin-top : 10px;
     text-decoration: none;
     color: black;
+    margin-bottom : 2px;
+
 }
 .persoInfo > .Resume > img {
     width : 20px;
@@ -251,5 +254,7 @@
 }
 .persoInfo > p{
     margin-top: 100px;
+    font-size:1rem;
+    width: 85%;
 }
 
