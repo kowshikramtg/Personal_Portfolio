@@ -28,7 +28,14 @@ function Dashboard() {
       <div className="content">
         <div className="sideBar">
           <a href="#">
-            <img src={logo} alt="" className="mainLogo" />
+            <Link
+              to="main_content"
+              smooth={true}
+              duration={500}
+              className="section-link"
+            >
+              <img src={logo} alt="" className="mainLogo" />
+            </Link>
           </a>
           <a href="myCV">My CV</a>
           <div></div>
@@ -194,7 +201,7 @@ function Dashboard() {
               placeholder="ex. Web-Design, Web-Dev..."
             />
           </div> */}
-          <ServiceSearch/>
+          <ServiceSearch />
           <div className="dateAndTime">
             <p className="day">
               {now.toLocaleDateString(undefined, { weekday: "short" })}
@@ -219,7 +226,7 @@ function Dashboard() {
         ></div>
 
         {/* vertical line */}
-        <div className="mainContent">
+        <div className="mainContent" id="main_content" name="main_content">
           <div className="perso">
             <div className="persoInfo">
               <h2>Kowshik</h2>
