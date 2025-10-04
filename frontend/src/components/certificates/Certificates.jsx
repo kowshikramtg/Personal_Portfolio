@@ -7,7 +7,7 @@ import ideaforge from "../../assets/certificates_img/ideaforge.jpg";
 import inceptrix from "../../assets/certificates_img/inceptrix.png";
 import infosys from "../../assets/certificates_img/infosys.png";
 import ncait from "../../assets/certificates_img/ncait.jpg";
-import agentic from "../../assets/certificates_img/agenticAi-google.png";
+import agentic from "../../assets/certificates_img/agenticAI-google.png";
 import kaggle from "../../assets/certificates_img/kaggle.png";
 
 function Certificates() {
