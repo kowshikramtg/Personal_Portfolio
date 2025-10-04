@@ -184,7 +184,13 @@ function Dashboard() {
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@kowshiktg3014">Medium</a>
+                <a
+                  href="https://medium.com/@kowshiktg3014"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Medium
+                </a>
               </li>
             </ul>
           </div>
@@ -215,10 +221,11 @@ function Dashboard() {
         <div
           style={{
             width: "1px",
-            height: "960px",
+            height: "1020px",
             backgroundColor: "rgba(155, 154, 154, 1)",
-            marginTop: "-7450px",
+            marginTop: "-5950px",
             marginLeft: "200px",
+            marginBottom: "-20px",
             position: "sticky",
             zIndex: "100",
             top: "0",
