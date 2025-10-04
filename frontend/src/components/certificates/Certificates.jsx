@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Certificates.css";
+import "./certificates.css";
 import bharatiya from "../../assets/certificates_img/bharatiya-A-H.png";
 import cicada from "../../assets/certificates_img/cicada.png";
 import colossus from "../../assets/certificates_img/colossus.jpg";

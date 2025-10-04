@@ -1,4 +1,4 @@
-import "./tech.css";
+import "./Tech.css";
 import reactLogo from "../../assets/rjs.png";
 import mongodbLogo from "../../assets/mongodb.png";
 import nodejsLogo from "../../assets/nodejs.png";
