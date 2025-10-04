@@ -13,7 +13,8 @@ import kaggle from "../../assets/certificates_img/kaggle.png";
 function Certificates() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  
+  const [fullscreenCert, setFullscreenCert] = useState(null);
+
   // Sample certificate data
   const certificates = [
     {
@@ -21,24 +22,26 @@ function Certificates() {
       title: "Bharatiya Antariksh Hackathon",
       image: bharatiya,
       description:
-      "Very proud to be a part of this hackathon, where we worked on a project that can help in space missions. But we couldn't make in any place",
+        "Very proud to be a part of this hackathon, where we worked on a project that can help in space missions. But we couldn't make in any place",
       certifiedBy: "ISRO + Hack2skill",
       certifiedOn: "September 2025",
       linkedPeople: [""],
-      takeaway: "Understood the need of AI in space missions and organizations.",
-      link:"https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
+      takeaway:
+        "Understood the need of AI in space missions and organizations.",
+      link: "https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
     },
     {
       id: 2,
       title: "Agentic AI day - Google",
       image: agentic,
       description:
-      "Understood the need of AI in modern applications, with it's capabilities and limitations",
+        "Understood the need of AI in modern applications, with it's capabilities and limitations",
       certifiedBy: "Google + Hack2skill",
       certifiedOn: "August 2025",
       linkedPeople: [""],
-      takeaway: "Understood the need of AI in modern applications, with it's capabilities and limitations",
-      link:"https://certificate.hack2skill.com/user/aidayideasubmission/2025H2S06AID-I25270",
+      takeaway:
+        "Understood the need of AI in modern applications, with it's capabilities and limitations",
+      link: "https://certificate.hack2skill.com/user/aidayideasubmission/2025H2S06AID-I25270",
     },
     {
       id: 3,
@@ -49,80 +52,86 @@ function Certificates() {
       certifiedBy: "Kaggle",
       certifiedOn: "July 2025",
       linkedPeople: [""],
-      takeaway: "Learnt how exactly models work with codes and math behind it, also the most important, \"Python\"",
-      link:"https://www.kaggle.com/learn/certification/kowshiktg/intro-to-machine-learning",
+      takeaway:
+        'Learnt how exactly models work with codes and math behind it, also the most important, "Python"',
+      link: "https://www.kaggle.com/learn/certification/kowshiktg/intro-to-machine-learning",
     },
     {
       id: 4,
-      title: "NCAIT '25 - National Conference on Advancement in Information Technology",
+      title:
+        "NCAIT '25 - National Conference on Advancement in Information Technology",
       image: ncait,
       description:
-      "i wrote a paper on \"Applications of Hasse diagram in space missions\" where i presented infront of panel members. you can seek more information in \"Paper\" Section",
+        'i wrote a paper on "Applications of Hasse diagram in space missions" where i presented infront of panel members. you can seek more information in "Paper" Section',
       certifiedBy: "ISE - JSSATE, Bengaluru",
       certifiedOn: "May 2025",
       linkedPeople: ["Mrs. A Radhika", "Dr. Netravathi B K"],
-      takeaway: "Learnt more about research, how to write a research paper, and also how to present it on the panel",
+      takeaway:
+        "Learnt more about research, how to write a research paper, and also how to present it on the panel",
     },
     {
       id: 5,
       title: "Colossus 2.0",
       image: colossus,
       description:
-      "we worked on blockchain technology, and created a project with a group of 4 members",
+        "we worked on blockchain technology, and created a project with a group of 4 members",
       certifiedBy: "Ambedkar institute of Technology, Bengaluru",
       certifiedOn: "April 2025",
       linkedPeople: [""],
-      takeaway: "we worked on blockchain technology, and created a project with a group of 4 members that stood out between top 20 teams",
-      
+      takeaway:
+        "we worked on blockchain technology, and created a project with a group of 4 members that stood out between top 20 teams",
     },
     {
       id: 6,
       title: "Inceptrix",
       image: inceptrix,
       description:
-      "we (the team) participated among 500+ teams in an AI project competition",
+        "we (the team) participated among 500+ teams in an AI project competition",
       certifiedBy: "Inceptrix- jain university, Bengaluru",
       certifiedOn: "April 2025",
       linkedPeople: [""],
-      takeaway: "we (the team) participated among 500+ teams in an AI project competition",
+      takeaway:
+        "we (the team) participated among 500+ teams in an AI project competition",
     },
     {
       id: 7,
       title: "Cicada",
       image: cicada,
       description:
-      "Me with my team, wowrked on \"figma\" which we didn't had any idea, at last, we finished the project proeffiently.",
+        'Me with my team, wowrked on "figma" which we didn\'t had any idea, at last, we finished the project proeffiently.',
       certifiedBy: "Atria Institute of Technology, Bengaluru",
       certifiedOn: "November 2024",
       linkedPeople: [""],
-      takeaway: "Me with my team, wowrked on \"figma\" which we didn't had any idea, at last, we finished the project proeffiently.",
+      takeaway:
+        'Me with my team, wowrked on "figma" which we didn\'t had any idea, at last, we finished the project proeffiently.',
     },
     {
       id: 8,
       title: "IdeaForge",
       image: ideaforge,
       description:
-      "With team of 4 members, we created a project that stood in 1st place",
+        "With team of 4 members, we created a project that stood in 1st place",
       certifiedBy: "Samyog- JSSATE, Bengaluru",
       certifiedOn: "October 2024",
       linkedPeople: [""],
       takeaway:
-      "Solid foundation in design principles and user-centered approach",
+        "Solid foundation in design principles and user-centered approach",
     },
     {
       id: 9,
       title: "Introduction to Cybersecurity",
       image: infosys,
       description:
-      "It was a beautifull learning, from basics, where i learnt what's cybersecurity, why it is needed, types of cyber attacks, and how to prevent them",
+        "It was a beautifull learning, from basics, where i learnt what's cybersecurity, why it is needed, types of cyber attacks, and how to prevent them",
       certifiedBy: "Infosys springboard",
       certifiedOn: "June 2024",
       linkedPeople: [""],
-      takeaway: "It was a beautifull learning, from basics, where i learnt what's cybersecurity, why it is needed, types of cyber attacks, and how to prevent them",
+      takeaway:
+        "It was a beautifull learning, from basics, where i learnt what's cybersecurity, why it is needed, types of cyber attacks, and how to prevent them",
     },
   ];
 
-  // Auto-advance carousel every 4 seconds
+  // Auto-advance carousel for every 2 seconds
   useEffect(() => {
     if (isPaused) return;
     const interval = setInterval(() => {
@@ -165,9 +174,10 @@ function Certificates() {
         </button>
 
         {/* Certificate Display Area */}
-        <div className="certificates-display" 
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
+        <div
+          className="certificates-display"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
         >
           {certificates.map((cert, index) => {
             const position = index - currentIndex;
@@ -194,7 +204,12 @@ function Certificates() {
             };
 
             return (
-              <div key={cert.id} className={className} style={style}>
+              <div
+                key={cert.id}
+                className={className}
+                style={style}
+                onClick={() => setFullscreenCert(cert)}
+              >
                 <div className="certificate-content">
                   <img
                     src={cert.image}
@@ -226,9 +241,7 @@ function Certificates() {
 
       {/* Certificate Details */}
       <div className="certificate-details">
-        <h2 className="certificate-heading">
-          {currentCertificate.title}
-        </h2>
+        <h2 className="certificate-heading">{currentCertificate.title}</h2>
 
         <p className="certificate-description">
           {currentCertificate.description}
@@ -262,10 +275,38 @@ function Certificates() {
         </div>
 
         {/* Link To Button */}
-        <a href={currentCertificate.link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={currentCertificate.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="link-button">link to</button>
         </a>
       </div>
+      {/* fullscreen overlay  */}
+      {fullscreenCert && (
+        <div
+          className="fullscreen-overlay"
+          onClick={(e) => {
+            if (e.target.classList.contains("fullscreen-overlay")) {
+              setFullscreenCert(null);
+            }
+          }}
+        >
+          <img
+            src={fullscreenCert.image}
+            alt={fullscreenCert.title}
+            className="fullscreen-certificate-image"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <div className="fullscreen-certificate-dis">
+          <p className="pp">{fullscreenCert.title}</p>
+          <p>{fullscreenCert.description}</p>
+          <p className="ppp">TakeAway</p>
+          <p className="ppp">{fullscreenCert.takeaway}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
