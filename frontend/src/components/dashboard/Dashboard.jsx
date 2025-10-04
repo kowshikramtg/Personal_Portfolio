@@ -6,7 +6,7 @@ import location from "../../assets/location.png";
 import download from "../../assets/download.png";
 import logo from "../../assets/logo.png";
 import ServiceSearch from "./ServiceSearch.jsx";
-import PersoImg from "../images/persoImg.jsx";
+import PersoImg from "../images/PersoImg.jsx";
 import Paper from "../paper/Paper.jsx";
 import Tech from "../technicalSkills/Tech.jsx";
 import FamiliarSkills from "../familiarSkills/FamiliarSkills.jsx";
@@ -14,7 +14,7 @@ import Projects from "../projects/Projects.jsx";
 import Occupation from "../occupation/Occupation.jsx";
 import Certificates from "../certificates/Certificates.jsx";
 import ContactMe from "../contactMe/ContactMe.jsx";
-import ContactLinks from "../ContactLinks/ContactLinks.jsx";
+// import ContactLinks from "../ContactLinks/ContactLinks.jsx";
 // import { List } from "react-scroll";
 
 function Dashboard() {
