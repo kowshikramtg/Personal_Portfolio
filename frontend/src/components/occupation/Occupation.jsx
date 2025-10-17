@@ -6,7 +6,7 @@ function Occupation() {
   return (
     <>
       <div className="Occupation">
-        <h3>Occupation</h3>
+        <h3>Academic Journey</h3>
         <div className="occupationList">
           <div className="occupationItem">
             <h3>Degree</h3>

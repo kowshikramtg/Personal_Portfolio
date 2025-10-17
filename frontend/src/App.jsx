@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import { List } from 'react-scroll';
 import Dashboard from './components/dashboard/Dashboard.jsx';
+import ProjectOne from './components/projectsList/ProjectOne.jsx'
 import React from 'react';
 import './App.css'
 
@@ -12,7 +13,7 @@ function App() {
     <>
     <div>
       <Dashboard />
-      
+      {/* <ProjectOne/> */}
     </div>
     </>
   );

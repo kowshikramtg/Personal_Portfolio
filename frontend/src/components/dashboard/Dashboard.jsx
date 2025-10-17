@@ -80,7 +80,7 @@ function Dashboard() {
                   duration={500}
                   className="section-link"
                 >
-                  Paper
+                  Research Work
                 </Link>
               </li>
               <li>
@@ -110,7 +110,7 @@ function Dashboard() {
                   duration={500}
                   className="section-link"
                 >
-                  Occupation
+                  Academic Journey
                 </Link>
               </li>
               <li>

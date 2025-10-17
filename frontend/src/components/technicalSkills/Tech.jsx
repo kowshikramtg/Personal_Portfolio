@@ -45,9 +45,7 @@ function Tech() {
             }}
           ></div>
           <p>
-            With the diverse field of Technical skills anf knowledge , I’m able
-            to modernize the projects as needed. Form scratch of developing to
-            deploying with AI.
+            With a diverse range of technical skills and knowledge, I specialize in modernizing projects from the ground up — from development to deployment, building models for impactfull and real-world problems, enhanced with the power of AI.
           </p>
         </div>
       </div>
