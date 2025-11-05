@@ -16,6 +16,7 @@ import Certificates from "../certificates/Certificates.jsx";
 import ContactMe from "../contactMe/ContactMe.jsx";
 // import ContactLinks from "../ContactLinks/ContactLinks.jsx";
 // import { List } from "react-scroll";
+import CV from "../../assets/CV.pdf"
 
 function Dashboard() {
   const [now, setNow] = useState(new Date());
@@ -37,7 +38,12 @@ function Dashboard() {
               <img src={logo} alt="" className="mainLogo" />
             </Link>
           </a>
-          <a href="myCV">My CV</a>
+          <a href="/" onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = CV;
+                  link.download = "Kowshik_CV.pdf";
+                  link.click();
+                }}>My CV</a>
           <div></div>
           <div
             style={{
@@ -149,7 +155,12 @@ function Dashboard() {
             <h2>Imp Links</h2>
             <ul>
               <li>
-                <a href="#">Resume</a>
+                <a href="#" onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = CV;
+                  link.download = "Kowshik_CV.pdf";
+                  link.click();
+                }}>Resume</a>
               </li>
               <li>
                 <a
@@ -252,7 +263,12 @@ function Dashboard() {
                 <img src={location} alt="locationLogo" />
                 Bengaluru, India
               </a>
-              <a href="#" className="Resume">
+              <a href="#" className="Resume" onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = CV;
+                  link.download = "Kowshik_CV.pdf";
+                  link.click();
+                }}>
                 <img src={download} alt="downloadLogo" />
                 Resume
               </a>
