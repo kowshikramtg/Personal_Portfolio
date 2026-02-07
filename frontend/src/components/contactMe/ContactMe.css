@@ -65,6 +65,7 @@
   transition: all 0.2s ease-in-out;
   background: #fff;
   color: #333;
+    box-shadow: 0 0 0 0.5px rgb(152, 152, 152);
 }
 .contact-form textarea{
     min-height: 120px;
@@ -75,8 +76,14 @@
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 1px rgb(94, 94, 94);
   transform: translateY(-2px);
+}
+.he{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
 /* Inline Date + Time */
@@ -92,28 +99,22 @@
 /* Submit Button */
 .form-actions {
   text-align: center;
+    gap: 80px;
 }
 
 .form-actions input[type="submit"] {
-  background: #cca0e4;
+  background: #ffffff;
   color: #410065;
   font-size: 1.15rem;
   font-weight: 400;
   padding: 0.7rem 1.9rem;
-  border-radius: 12px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .form-actions input[type="submit"]:hover {
-  background: #af72d0;
-  font-size:1.2rem;
-  transform: scale(1.05);
-}
-.he{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
+  background: #cca0e4;
+  font-size: 1.2rem;
 }

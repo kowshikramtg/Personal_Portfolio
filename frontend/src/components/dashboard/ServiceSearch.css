@@ -1,5 +1,16 @@
-.highlight mark{
-    background-color: rgb(234, 223, 255);
-    color: black;
-    font-family: "Poppins", "JUST Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.highlight mark {
+  background-color: rgb(219, 202, 250);
+  color: black;
+  font-family:
+    "Poppins", "JUST Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+}
+
+.match-counter {
+  font-size: 10px;
+  color: rgb(65, 65, 65);
+  font-family:
+    "Poppins", "JUST Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 10px;
+  font-weight: 500;
 }

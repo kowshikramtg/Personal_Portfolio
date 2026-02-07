@@ -110,7 +110,7 @@ function ContactMe() {
 
               {/* Meet Section */}
               <div className="form-group">
-                <label htmlFor="meet">Would you like a Meet?</label>
+                <label htmlFor="meet">Would like to Meet?</label>
                 <select
                   value={wantMeet}
                   onChange={(e) => setWantMeet(e.target.value)}

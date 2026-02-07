@@ -1,6 +1,7 @@
 import "./projects.css";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
+import project3 from "../../assets/project3.png";
 
 function Project() {
   return (
@@ -9,6 +10,46 @@ function Project() {
         <h2 className="ProjTitle">Projects</h2>
         <div className="projectsList">
           <div className="projectItem firstItem">
+                <a
+                  href="https://sudhaherbalbeautyparlour.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <h3>Sudha Herbal Beauty Parlour</h3>
+                  <div className="project-image-wrapper">
+                    <img
+                      src={project3}
+                      alt="parlor image"
+                      className="project-img"
+                    />
+                    <div className="tech-overlay">
+                      <div className="tech">
+                        <span>MERN</span>
+                        <div className="bar">
+                          <div style={{ width: "90%" }}></div>
+                        </div>
+                        <span className="percent">90%</span>
+                      </div>
+                      <div className="tech">
+                        <span>CSS</span>
+                        <div className="bar">
+                          <div style={{ width: "6%" }}></div>
+                        </div>
+                        <span className="percent">6%</span>
+                      </div>
+                      <div className="tech">
+                        <span>API</span>
+                        <div className="bar">
+                          <div style={{ width: "4%" }}></div>
+                        </div>
+                        <span className="percent">4%</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+          </div>
+          <div className="projectItem">
             <a
               href="https://attendance-calculator-six.vercel.app/"
               target="_blank"
@@ -17,8 +58,12 @@ function Project() {
             >
               <h3>Attendance-Bunk Calculator</h3>
               <div className="project-image-wrapper">
-                <img src={project1} alt="website Dashboard" className="project-img"/>
-                
+                <img
+                  src={project1}
+                  alt="website Dashboard"
+                  className="project-img"
+                />
+
                 <div className="tech-overlay">
                   <div className="tech">
                     <span>JS</span>
@@ -42,15 +87,6 @@ function Project() {
                     <span className="percent">7%</span>
                   </div>
                 </div>
-
-              </div>
-            </a>
-          </div>
-          <div className="projectItem">
-            <a href="">
-              <h3>on work</h3>
-              <div className="imgs">
-                <img src="" alt="project3" />
               </div>
             </a>
           </div>
@@ -139,3 +175,4 @@ function Project() {
   );
 }
 export default Project;
+

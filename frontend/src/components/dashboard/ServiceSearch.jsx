@@ -4,6 +4,8 @@ import "./ServiceSearch.css";
 const SearchHighlight = () => {
   const inputRef = useRef(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
+  const [matches, setMatches] = useState([]);
 
   useEffect(() => {
     // Remove previous highlights
@@ -14,11 +16,15 @@ const SearchHighlight = () => {
       parent.normalize();
     });
 
-    if (!searchTerm) return;
+    if (!searchTerm) {
+      setMatches([]);
+      setCurrentMatchIndex(0);
+      return;
+    }
 
     // using regex texhnique, to find the element(searchTerm) typed in input 
     const regex = new RegExp(`(${searchTerm})`, "gi"); // g- global, i- case-Insensetive
-    let firstMatch = null;
+    const allMatches = [];
 
     const highlightNode = (node) => {
       if (node.nodeType === 3) {
@@ -28,7 +34,8 @@ const SearchHighlight = () => {
           span.className = "highlight";
           span.innerHTML = node.data.replace(regex, '<mark>$1</mark>');
           node.parentNode.replaceChild(span, node);
-          if (!firstMatch) firstMatch = span.querySelector("mark");
+          const marks = span.querySelectorAll("mark");
+          marks.forEach((m) => allMatches.push(m));
         }
       } else if (
         node.nodeType === 1 &&
@@ -40,12 +47,38 @@ const SearchHighlight = () => {
       }
     };
 
-    highlightNode(document.body);
+    // Find the mainContent div to search only within dashboard
+    const mainContent = document.querySelector(".mainContent");
+    if (mainContent) {
+      highlightNode(mainContent);
+    } else {
+      highlightNode(document.body);
+    }
 
-    if (firstMatch) {
-      firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+    setMatches(allMatches);
+    setCurrentMatchIndex(0);
+
+    if (allMatches.length > 0) {
+      scrollToMatch(allMatches[0]);
     }
   }, [searchTerm]);
+
+  const scrollToMatch = (element) => {
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 100);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && matches.length > 0) {
+      e.preventDefault();
+      const nextIndex = (currentMatchIndex + 1) % matches.length;
+      setCurrentMatchIndex(nextIndex);
+      scrollToMatch(matches[nextIndex]);
+    }
+  };
 
   return (
     <div className="searchInput">
@@ -58,7 +91,11 @@ const SearchHighlight = () => {
         ref={inputRef}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
+      {matches.length > 0 && (
+        <span className="match-counter">{currentMatchIndex + 1} / {matches.length}</span>
+      )}
     </div>
   );
 };

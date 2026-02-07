@@ -136,7 +136,7 @@ function Certificates() {
     if (isPaused) return;
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === certificates.length - 1 ? 0 : prevIndex + 1
+        prevIndex === certificates.length - 1 ? 0 : prevIndex + 1,
       );
     }, 2000);
 
@@ -145,13 +145,13 @@ function Certificates() {
 
   const goToPrevious = () => {
     setCurrentIndex(
-      currentIndex === 0 ? certificates.length - 1 : currentIndex - 1
+      currentIndex === 0 ? certificates.length - 1 : currentIndex - 1,
     );
   };
 
   const goToNext = () => {
     setCurrentIndex(
-      currentIndex === certificates.length - 1 ? 0 : currentIndex + 1
+      currentIndex === certificates.length - 1 ? 0 : currentIndex + 1,
     );
   };
 
@@ -262,19 +262,22 @@ function Certificates() {
           </div>
 
           {/* Linked People */}
-          <div className="info-item">
-            <h3 className="info-title">linked people</h3>
-            <div className="info-content">
-              {currentCertificate.linkedPeople.map((person, index) => (
-                <p key={index} className="person-name">
-                  {person}
-                </p>
-              ))}
+          {currentCertificate.linkedPeople.length > 0 && (
+            <div className="info-item">
+              <h3 className="info-title">Linked people</h3>
+              <div className="info-content">
+                {currentCertificate.linkedPeople.map((person, index) => (
+                  <p key={index} className="person-name">
+                    {person}
+                  </p>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Link To Button */}
+        {currentCertificate.link && (
         <a
           href={currentCertificate.link}
           target="_blank"
@@ -282,6 +285,7 @@ function Certificates() {
         >
           <button className="link-button">link to</button>
         </a>
+        )}
       </div>
       {/* fullscreen overlay  */}
       {fullscreenCert && (
@@ -300,10 +304,10 @@ function Certificates() {
             onClick={(e) => e.stopPropagation()}
           />
           <div className="fullscreen-certificate-dis">
-          <p className="pp">{fullscreenCert.title}</p>
-          <p>{fullscreenCert.description}</p>
-          <p className="ppp">TakeAway</p>
-          <p className="ppp">{fullscreenCert.takeaway}</p>
+            <p className="pp">{fullscreenCert.title}</p>
+            <p>{fullscreenCert.description}</p>
+            <p className="ppp">TakeAway</p>
+            <p className="ppp">{fullscreenCert.takeaway}</p>
           </div>
         </div>
       )}
