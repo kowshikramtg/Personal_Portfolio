@@ -9,8 +9,8 @@ import infosys from "../../assets/certificates_img/infosys.png";
 import ncait from "../../assets/certificates_img/ncait.jpg";
 import agentic from "../../assets/certificates_img/agenticAI-google.png";
 import kaggle from "../../assets/certificates_img/kaggle.png";
-import vit from "../../assets/certificates_img/vit.png";
-import nptel from "../../assets/certificates_img/nptel.png";
+import vit from "../../assets/certificates_img/vit.jpg";
+import nptel from "../../assets/certificates_img/nptel.jpg";
 
 function Certificates() {
   const [currentIndex, setCurrentIndex] = useState(0);
