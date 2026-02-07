@@ -9,6 +9,8 @@ import infosys from "../../assets/certificates_img/infosys.png";
 import ncait from "../../assets/certificates_img/ncait.jpg";
 import agentic from "../../assets/certificates_img/agenticAI-google.png";
 import kaggle from "../../assets/certificates_img/kaggle.png";
+import vit from "../../assets/certificates_img/vit.png";
+import nptel from "../../assets/certificates_img/nptel.png";
 
 function Certificates() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,6 +21,31 @@ function Certificates() {
   const certificates = [
     {
       id: 1,
+      title: "HackaThrone'25",
+      image: vit,
+      description:
+        "It was very informative challenging and getting into Top 10 place was a worth for my POV of understanding tech.",
+      certifiedBy: "VIT Chennai",
+      certifiedOn: "November 2025",
+      linkedPeople: [""],
+      takeaway:
+        "Spent time with great tech bug eaters, and got good catch with enthusiasing environment",
+    },
+    {
+      id: 2,
+      title: "Introduction to Machine Learning",
+      image: nptel,
+      description:
+        "It is my Base for ML, Clearly articulated by subject expert - Prof. Sudeshna Sarkar from the institute - IIT Kharagpur",
+      certifiedBy: "NPTEL",
+      certifiedOn: "September 2025",
+      linkedPeople: [""],
+      takeaway:
+        "The greatest takeway is itself the subject, it is soo interesting.",
+      link: "https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
+    },
+    {
+      id: 3,
       title: "Bharatiya Antariksh Hackathon",
       image: bharatiya,
       description:
@@ -31,7 +58,7 @@ function Certificates() {
       link: "https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
     },
     {
-      id: 2,
+      id: 4,
       title: "Agentic AI day - Google",
       image: agentic,
       description:
@@ -44,7 +71,7 @@ function Certificates() {
       link: "https://certificate.hack2skill.com/user/aidayideasubmission/2025H2S06AID-I25270",
     },
     {
-      id: 3,
+      id: 5,
       title: "Intro to Machine Learning",
       image: kaggle,
       description:
@@ -57,7 +84,7 @@ function Certificates() {
       link: "https://www.kaggle.com/learn/certification/kowshiktg/intro-to-machine-learning",
     },
     {
-      id: 4,
+      id: 6,
       title:
         "NCAIT '25 - National Conference on Advancement in Information Technology",
       image: ncait,
@@ -70,7 +97,7 @@ function Certificates() {
         "Learnt more about research, how to write a research paper, and also how to present it on the panel",
     },
     {
-      id: 5,
+      id: 7,
       title: "Colossus 2.0",
       image: colossus,
       description:
@@ -82,7 +109,7 @@ function Certificates() {
         "we worked on blockchain technology, and created a project with a group of 4 members that stood out between top 20 teams",
     },
     {
-      id: 6,
+      id: 8,
       title: "Inceptrix",
       image: inceptrix,
       description:
@@ -94,7 +121,7 @@ function Certificates() {
         "we (the team) participated among 500+ teams in an AI project competition",
     },
     {
-      id: 7,
+      id: 9,
       title: "Cicada",
       image: cicada,
       description:
@@ -106,7 +133,7 @@ function Certificates() {
         'Me with my team, wowrked on "figma" which we didn\'t had any idea, at last, we finished the project proeffiently.',
     },
     {
-      id: 8,
+      id: 10,
       title: "IdeaForge",
       image: ideaforge,
       description:
@@ -118,7 +145,7 @@ function Certificates() {
         "Solid foundation in design principles and user-centered approach",
     },
     {
-      id: 9,
+      id: 11,
       title: "Introduction to Cybersecurity",
       image: infosys,
       description:
