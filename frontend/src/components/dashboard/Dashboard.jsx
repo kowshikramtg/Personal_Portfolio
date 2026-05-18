@@ -16,7 +16,8 @@ import Certificates from "../certificates/Certificates.jsx";
 import ContactMe from "../contactMe/ContactMe.jsx";
 // import ContactLinks from "../ContactLinks/ContactLinks.jsx";
 // import { List } from "react-scroll";
-import CV from "../../assets/CV.pdf"
+import CV from "../../assets/CV.pdf";
+import Resume from "../../assets/Resume.pdf";
 
 function Dashboard() {
   const [now, setNow] = useState(new Date());
@@ -38,12 +39,17 @@ function Dashboard() {
               <img src={logo} alt="" className="mainLogo" />
             </Link>
           </a>
-          <a href="/" onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = CV;
-                  link.download = "Kowshik_CV.pdf";
-                  link.click();
-                }}>My CV</a>
+          <a
+            href="/"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = Resume;
+              link.download = "Kowshik_Resume.pdf";
+              link.click();
+            }}
+          >
+            My Resume
+          </a>
           <div></div>
           <div
             style={{
@@ -155,16 +161,21 @@ function Dashboard() {
             <h2>Imp Links</h2>
             <ul>
               <li>
-                <a href="#" onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = CV;
-                  link.download = "Kowshik_CV.pdf";
-                  link.click();
-                }}>Resume</a>
+                <a
+                  href="#"
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = Resume;
+                    link.download = "Kowshik_Resume.pdf";
+                    link.click();
+                  }}
+                >
+                  Resume
+                </a>
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/kowshik-t-g-036b852b4"
+                  href="https://www.linkedin.com/in/kowshiktg/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -183,6 +194,15 @@ function Dashboard() {
               <li>
                 <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">
                   Email
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://peerlist.io/kowshiktg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PeerList
                 </a>
               </li>
               <li>
@@ -263,12 +283,16 @@ function Dashboard() {
                 <img src={location} alt="locationLogo" />
                 Bengaluru, India
               </a>
-              <a href="#" className="Resume" onClick={() => {
+              <a
+                href="#"
+                className="Resume"
+                onClick={() => {
                   const link = document.createElement("a");
-                  link.href = CV;
-                  link.download = "Kowshik_CV.pdf";
+                  link.href = Resume;
+                  link.download = "Kowshik_Resume.pdf";
                   link.click();
-                }}>
+                }}
+              >
                 <img src={download} alt="downloadLogo" />
                 Resume
               </a>

@@ -11,6 +11,7 @@ import agentic from "../../assets/certificates_img/agenticAI-google.png";
 import kaggle from "../../assets/certificates_img/kaggle.png";
 import vit from "../../assets/certificates_img/vit.jpg";
 import nptel from "../../assets/certificates_img/nptel.jpg";
+import awsb from "../../assets/certificates_img/AWS_business-essential.jpg";
 
 function Certificates() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,6 +22,18 @@ function Certificates() {
   const certificates = [
     {
       id: 1,
+      title:
+        "Machine Learning Essentials for Business and Technical Decision Makers",
+      image: awsb,
+      description: "",
+      certifiedBy: "AWS Training & Certification",
+      certifiedOn: "March 2026",
+      linkedPeople: [""],
+      takeaway:
+        "This course provided a comprehensive overview of machine learning concepts and their practical applications in business and technical decision-making. It covered essential topics such as data preprocessing, model selection, and evaluation, enabling me to understand how to leverage machine learning for informed decision-making in various contexts.",
+    },
+    {
+      id: 2,
       title: "HackaThrone'25",
       image: vit,
       description:
@@ -32,7 +45,7 @@ function Certificates() {
         "Spent time with great tech bug eaters, and got good catch with enthusiasing environment",
     },
     {
-      id: 2,
+      id: 3,
       title: "Introduction to Machine Learning",
       image: nptel,
       description:
@@ -45,7 +58,7 @@ function Certificates() {
       link: "https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
     },
     {
-      id: 3,
+      id: 4,
       title: "Bharatiya Antariksh Hackathon",
       image: bharatiya,
       description:
@@ -58,7 +71,7 @@ function Certificates() {
       link: "https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P03552",
     },
     {
-      id: 4,
+      id: 5,
       title: "Agentic AI day - Google",
       image: agentic,
       description:
@@ -71,7 +84,7 @@ function Certificates() {
       link: "https://certificate.hack2skill.com/user/aidayideasubmission/2025H2S06AID-I25270",
     },
     {
-      id: 5,
+      id: 6,
       title: "Intro to Machine Learning",
       image: kaggle,
       description:
@@ -84,7 +97,7 @@ function Certificates() {
       link: "https://www.kaggle.com/learn/certification/kowshiktg/intro-to-machine-learning",
     },
     {
-      id: 6,
+      id: 7,
       title:
         "NCAIT '25 - National Conference on Advancement in Information Technology",
       image: ncait,
@@ -97,7 +110,7 @@ function Certificates() {
         "Learnt more about research, how to write a research paper, and also how to present it on the panel",
     },
     {
-      id: 7,
+      id: 8,
       title: "Colossus 2.0",
       image: colossus,
       description:
@@ -109,7 +122,7 @@ function Certificates() {
         "we worked on blockchain technology, and created a project with a group of 4 members that stood out between top 20 teams",
     },
     {
-      id: 8,
+      id: 9,
       title: "Inceptrix",
       image: inceptrix,
       description:
@@ -121,7 +134,7 @@ function Certificates() {
         "we (the team) participated among 500+ teams in an AI project competition",
     },
     {
-      id: 9,
+      id: 10,
       title: "Cicada",
       image: cicada,
       description:
@@ -133,7 +146,7 @@ function Certificates() {
         'Me with my team, wowrked on "figma" which we didn\'t had any idea, at last, we finished the project proeffiently.',
     },
     {
-      id: 10,
+      id: 11,
       title: "IdeaForge",
       image: ideaforge,
       description:
@@ -145,7 +158,7 @@ function Certificates() {
         "Solid foundation in design principles and user-centered approach",
     },
     {
-      id: 11,
+      id: 12,
       title: "Introduction to Cybersecurity",
       image: infosys,
       description:
@@ -289,7 +302,7 @@ function Certificates() {
           </div>
 
           {/* Linked People */}
-          {currentCertificate.linkedPeople.length > 0 && (
+          {!currentCertificate.linkedPeople.length === 0 && (
             <div className="info-item">
               <h3 className="info-title">Linked people</h3>
               <div className="info-content">
@@ -305,13 +318,13 @@ function Certificates() {
 
         {/* Link To Button */}
         {currentCertificate.link && (
-        <a
-          href={currentCertificate.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="link-button">link to</button>
-        </a>
+          <a
+            href={currentCertificate.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="link-button">link to</button>
+          </a>
         )}
       </div>
       {/* fullscreen overlay  */}
