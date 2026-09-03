@@ -16,8 +16,8 @@ import Certificates from "../certificates/Certificates.jsx";
 import ContactMe from "../contactMe/ContactMe.jsx";
 // import ContactLinks from "../ContactLinks/ContactLinks.jsx";
 // import { List } from "react-scroll";
-import CV from "../../assets/CV.pdf";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/CV.pdf";
+// import Resume from "../../assets/Resume.pdf";
 
 function Dashboard() {
   const [now, setNow] = useState(new Date());
@@ -192,7 +192,7 @@ function Dashboard() {
                 </a>
               </li>
               <li>
-                <a href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">
+                <a href="mailto:kowshik1618@gmail.com?subject=topic&body=Hey,place%20your%20desc%20here...">
                   Email
                 </a>
               </li>
@@ -269,11 +269,11 @@ function Dashboard() {
             <div className="persoInfo">
               <h2>Kowshik</h2>
               <a
-                href="mailto:kowshiktg3014@gmail.com?subject=topic&body=Hey,%20place%20your%20desc%20here..."
+                href="mailto:kowshik1618@gmail.com?subject=topic&body=Hey,%20place%20your%20desc%20here..."
                 className="email"
               >
                 <img src={email} alt="emailLogo" />
-                kowshiktg3014@gmail.com
+                kowshik1618@gmail.com
               </a>
               <a
                 href="https://www.google.com/maps/place/12.904650707169,77.5064444822303"

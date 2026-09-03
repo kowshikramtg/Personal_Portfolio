@@ -7,7 +7,7 @@ function ContactLinks() {
   const backgroundRef = useRef(null);
 
   const contactLinks = [
-    { id: 'email', icon: Mail, href: 'mailto:kowshiktg3014@gmail.com', label: 'Email', color: '#EA4335' },
+    { id: 'email', icon: Mail, href: 'mailto:kowshik1618@gmail.com', label: 'Email', color: '#EA4335' },
     { id: 'linkedin', icon: Linkedin, href: 'https://linkedin.com/in/kowshik-t-g-036b852b4/', label: 'LinkedIn', color: '#0A66C2' },
     { id: 'twitter', icon: Twitter, href: 'https://x.com/kowshikram_1405', label: 'Twitter/X', color: '#1DA1F2' },
     { id: 'github', icon: Github, href: 'https://github.com/kowshikramtg', label: 'GitHub', color: '#333' },
